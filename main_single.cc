@@ -14,7 +14,9 @@ void *singleThread_sort(void *arg)
 int main()
 {
     vector<int> inputvect;
-    int sz = 50;
+    int sz ;
+    cout<<"Input Array size \n";
+    cin>>sz;
     clock_t t1, t2;
     for (int i = 0; i < sz; i++)
     {
