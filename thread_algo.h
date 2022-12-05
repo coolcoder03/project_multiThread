@@ -1,24 +1,7 @@
 #ifndef __thread_algo__h
 #define __thread_algo__h
 #include <vector>
-#include<ostream>
 using std::vector;
-using std::ostream;
-
-class intVector{
-    public:
-    intVector(){};
-    intVector(int sz);
-  bool operator<(const intVector &v);
-  bool operator>(const intVector &v);
-  bool operator==(const intVector &v);
-  bool operator>=(const intVector &v);
-  bool operator<=(const intVector &v);
-  friend ostream& operator<<(ostream &os,const intVector&v );
-  private:
-  int size;
-  vector<int> vect;
-};
 
 void merge(vector<int> &arr, vector<int> &left, vector<int> &right);
 void swap(int &x, int &y);
