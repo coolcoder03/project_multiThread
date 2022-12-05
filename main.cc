@@ -5,7 +5,7 @@
 using std::cout;
 
 vector<int> inputvect;
-int sz = 50; // input size
+int sz; // input size
 
 typedef struct Data
 {
@@ -46,7 +46,8 @@ void *merge_thread(void *arg)
 int main()
 {
     clock_t t1, t2; // clock variable to compute time
-
+    cout<<"Enter Array Size \n";
+    cin>>sz;
     // creating random vector
     for (int i = 0; i < sz; i++)
     {
